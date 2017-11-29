@@ -1,0 +1,43 @@
+{
+    "name": "jplarar/ses-bundle",
+    "description": "A simple Symfony2 bundle for the API for AWS SES.",
+    "type": "symfony-bundle",
+    "keywords": [
+        "jplarar",
+        "ses",
+        "aws-sdk"
+    ],
+    "homepage": "https://github.com/jplarar/SESBundle",
+    "license": "",
+    "authors": [
+      {
+        "name": "Juan Paulo Lara",
+        "email": "jplarar@gmail.com",
+        "role": "developer"
+      }
+    ],
+    "require": {
+      "php": ">=5.3",
+      "symfony/config": "~2.1",
+      "symfony/dependency-injection": "~2.1",
+      "symfony/filesystem": "~2.1",
+      "symfony/form": "~2.1",
+      "symfony/framework-bundle": "~2.1",
+      "symfony/http-foundation": "~2.1",
+      "symfony/http-kernel": "~2.1",
+      "symfony/monolog-bundle": "~2.1",
+      "symfony/options-resolver": "~2.1",
+      "symfony/security": "~2.1",
+      "symfony/validator": "~2.1",
+      "sensio/framework-extra-bundle": "~2.1",
+      "aws/aws-sdk-php": "^3.0"
+    },
+    "suggest": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+      "psr-0": { "Jplarar\\SESBundle": "" }
+    },
+    "target-dir": "Jplarar/SESBundle"
+}
