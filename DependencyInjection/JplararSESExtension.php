@@ -1,6 +1,6 @@
 <?php
 
-namespace Jplarar\SNSBundle\DependencyInjection;
+namespace Jplarar\SESBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
