@@ -1,7 +1,7 @@
 <?php
 namespace Jplarar\SESBundle;
 
-use Jplarar\SNSBundle\DependencyInjection\JplararSESExtension;
+use Jplarar\SESBundle\DependencyInjection\JplararSESExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class JplararSESBundle extends Bundle
