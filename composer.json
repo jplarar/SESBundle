@@ -8,7 +8,7 @@
         "aws-sdk"
     ],
     "homepage": "https://github.com/jplarar/SESBundle",
-    "license": "",
+    "license": "MIT",
     "authors": [
       {
         "name": "Juan Paulo Lara",
