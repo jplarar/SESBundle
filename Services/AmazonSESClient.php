@@ -46,7 +46,7 @@ class AmazonSESClient
      */
     public function sendEmail($toAddress, $subject, $sender, $htmlBody, $textBody, $charSet = "UTF-8", $configSet = "")
     {
-        $content = array([
+        $content = [
             'Destination' => [
                 'ToAddresses' => [
                     $toAddress,
@@ -69,7 +69,7 @@ class AmazonSESClient
                 ],
             ],
             'Source' => $sender,
-        ]);
+        ];
 
         // If using a configuration set
         if (strlen($configSet) > 0) {
