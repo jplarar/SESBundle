@@ -10,7 +10,7 @@ Add SES Bundle in your composer.json:
 ```js
 {
     "require": {
-        "jplarar/ses-bundle": "dev-master"
+        "jplarar/ses-bundle": "^1.0.0"
     }
 }
 ```
