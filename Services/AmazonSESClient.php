@@ -79,7 +79,7 @@ class AmazonSESClient
 
         // Reply to Address
         if ($replyTo) {
-            $content["ReplyToAddresses"] = $replyTo;
+            $content["ReplyToAddresses"] = [$replyTo];
         }
 
         try {
