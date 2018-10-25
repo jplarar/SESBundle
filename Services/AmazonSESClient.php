@@ -44,7 +44,7 @@ class AmazonSESClient
      * @return \Aws\Result|\Guzzle\Service\Resource\Model|null
      * @throws \Exception
      */
-    public function sendEmail($toAddress, $subject, $sender, $htmlBody, $textBody, $charSet = "UTF-8", $configSet = "")
+    public function sendEmail($toAddress, $subject, $sender, $htmlBody, $textBody, $replyTo = null, $charSet = "UTF-8", $configSet = "")
     {
         $content = [
             'Destination' => [
@@ -74,6 +74,11 @@ class AmazonSESClient
         // If using a configuration set
         if (strlen($configSet) > 0) {
             $content["ConfigurationSetName"] = $configSet;
+        }
+
+        // Reply to Address
+        if ($replyTo) {
+            $content["ReplyToAddresses"] = $replyTo;
         }
 
         try {
