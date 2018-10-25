@@ -34,14 +34,15 @@ class AmazonSESClient
     }
 
     /**
-     * @param $toAddress //If your account is still in the sandbox, this address must be verified.
+     * @param $toAddress
      * @param $subject
-     * @param $sender //This address must be verified with Amazon SES.
+     * @param $sender
      * @param $htmlBody
      * @param $textBody
+     * @param null $replyTo
      * @param string $charSet
      * @param string $configSet
-     * @return \Aws\Result|\Guzzle\Service\Resource\Model|null
+     * @return \Aws\Result|\Guzzle\Service\Resource\Model
      * @throws \Exception
      */
     public function sendEmail($toAddress, $subject, $sender, $htmlBody, $textBody, $replyTo = null, $charSet = "UTF-8", $configSet = "")
