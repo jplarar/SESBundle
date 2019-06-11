@@ -2,3 +2,4 @@ services:
      amazon_ses_client:
          class:     Jplarar\SESBundle\Services\AmazonSESClient
          arguments: ["%amazon_ses_key%", "%amazon_ses_secret%", "%amazon_ses_region%"]
+         autowire: true
